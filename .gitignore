@@ -1,0 +1,64 @@
+# =======================
+# 通用忽略规则
+# =======================
+
+# 操作系统相关
+.DS_Store
+Thumbs.db
+
+# IDE 或编辑器相关
+.idea/
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.vscode/
+
+# 日志文件
+*.log
+
+# =======================
+# Java/Maven 项目忽略规则
+# =======================
+
+# 编译输出目录
+target/
+build/
+
+# Maven 相关
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# 依赖目录（如果不使用 Maven 的依赖缓存机制）
+# lib/
+
+# =======================
+# 前端/Node.js 项目忽略规则
+# =======================
+
+# Node.js 模块目录
+node_modules/
+
+# 前端构建输出目录（根据具体构建工具名称进行调整）
+dist/
+build/
+
+# 临时文件
+.npm/
+*.tmp
+
+# =======================
+# 其他常见忽略规则
+# =======================
+
+# 压缩文件或归档文件
+*.zip
+*.tar.gz
+*.rar
+
+# 配置文件（如果包含敏感信息，不建议提交）
+.env
