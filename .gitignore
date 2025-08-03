@@ -7,6 +7,7 @@
 Thumbs.db
 
 # IDE 或编辑器相关
+tims-service/
 .idea/
 *.iml
 *.suo
