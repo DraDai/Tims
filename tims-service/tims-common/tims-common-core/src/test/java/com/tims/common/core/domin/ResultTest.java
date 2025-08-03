@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 public class ResultTest {
     @Test
     public void testResult() {
-        Result<String> result = Result.success("成功");
+        Result<String> result = Result.success();
         System.out.println(result);
     }
 }
