@@ -8,6 +8,7 @@ Thumbs.db
 
 # IDE 或编辑器相关
 .idea/
+*Test*.java
 *.iml
 *.suo
 *.ntvs*

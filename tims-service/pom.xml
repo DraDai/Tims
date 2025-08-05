@@ -16,6 +16,7 @@
     <description>tims-service</description>
     <modules>
         <module>tims-common</module>
+        <module>tims-gateway</module>
     </modules>
 
     <properties>
