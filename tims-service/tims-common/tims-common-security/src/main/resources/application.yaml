@@ -1,0 +1,8 @@
+tims:
+  common:
+    security:
+      jwt:
+        secret: Cm1ASAj8tG+cdgx7FaI8jWuYEAR+LiAg52RoLD/sr0k=
+        expiration: 86400000
+      aes:
+        secret: q5605NNufKeAKW4RRoFc6A==
