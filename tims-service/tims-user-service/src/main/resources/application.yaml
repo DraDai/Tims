@@ -1,0 +1,32 @@
+server:
+  port: ${server.port:0}
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: tims-user-service
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        password: 2004long
+        file-extension: yaml
+        refresh-enabled: true
+      discovery:
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        password: 2004long
+  config:
+    import:
+      - optional:nacos:${spring.application.name}-dev.yaml
+      - optional:nacos:tims-common.yaml
+
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+    com.fasterxml.jackson.databind: TRACE
+
+

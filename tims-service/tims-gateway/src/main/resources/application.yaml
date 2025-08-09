@@ -1,4 +1,9 @@
+server:
+  port: ${server.port:0}
+
 spring:
+  profiles:
+    active: dev
   application:
     name: tims-gateway
   cloud:
@@ -7,16 +12,14 @@ spring:
         server-addr: 127.0.0.1:8848
         username: nacos
         password: 2004long
-        group: GATEWAY_GROUP
         file-extension: yaml
         refresh-enabled: true
       discovery:
         server-addr: 127.0.0.1:8848
         username: nacos
         password: 2004long
-        group: GATEWAY_GROUP
 
   config:
     import:
-      - optional:nacos:${spring.application.name}.yaml?group=${spring.cloud.nacos.config.group}
-      - optional:nacos:${spring.application.name}-dev.yaml?group=${spring.cloud.nacos.config.group}
+      - optional:nacos:${spring.application.name}-dev.yaml
+
