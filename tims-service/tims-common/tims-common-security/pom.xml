@@ -8,7 +8,7 @@
         <artifactId>tims-common</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-
+    <packaging>jar</packaging>
     <artifactId>tims-common-security</artifactId>
 
 
